@@ -35,4 +35,23 @@ return [
         ],
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Google OAuth Configuration
+    |--------------------------------------------------------------------------
+    |
+    | These credentials are used for authenticating users via Google OAuth.
+    | The client ID and client secret are provided by Google Cloud Console,
+    | while the redirect URL defines where Google should send the user after
+    | successful authentication.
+    |
+    | Make sure the redirect URL matches the one configured in the Google
+    | Developer Console and is set correctly in the environment file.
+    |
+    */
+    'google' => [
+        'client_id' => env('GOOGLE_CLIENT_ID'),
+        'client_secret' => env('GOOGLE_CLIENT_SECRET'),
+        'redirect' => env('GOOGLE_REDIRECT')
+    ]
 ];
